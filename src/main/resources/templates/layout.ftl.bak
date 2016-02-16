@@ -48,7 +48,7 @@
     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
-
+                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">5000円以上のお買い上げで今なら35%オフ！</a>
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
@@ -59,7 +59,7 @@
                                 <div class="yamm-content">
                                     <div class="row">
                                             <div class="col-sm-3">
-                                                <a href="http://localhost:8080/logout" class="layout-menu-font">ログアウト</a>
+                                                <a href="/logout" class="layout-menu-font">Logout</a>
                                             </div>
                                     </div>
                                 </div>
@@ -67,19 +67,17 @@
                         </ul>
                     </li>
                     <#else>
-                    <li><a href="http://localhost:8080/my/orders?id=1" data-toggle="modal" data-target="#login-modal">ログイン</a>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">ログイン</a>
                     </li>
                     </#if>
                     <li><a href="/register">新規作成</a>
                     </li>
                     <li><a href="http://www.tis.co.jp/recruit/index.html">TISホームページ</a>
                     </li>
-                    <li><a href="http://localhost:8080/my/orders?id=1">マイページ</a>
+                    <li><a href="http://localhost:8080/my/account?id=1">マイページ</a>
                     </li>
                     <li><a href="http://localhost:8080/category?genreId=33&subgenreId=">MOVIE</a>
                      </li>
-                      <li><a href="http://localhost:8080/category?genreId=34&subgenreId=">MUSIC</a>
-                      </li>
                 </ul>
             </div>
         </div>
@@ -89,26 +87,26 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">ログインホーム</h4>
+                        <h4 class="modal-title" id="Login">Customer login</h4>
                     </div>
                     <div class="modal-body">
                         <form action="/login" method="post">
                             <div class="form-group">
-                                <input type="text" name="account" class="form-control" id="account-modal" placeholder="アカウント名">
+                                <input type="text" name="account" class="form-control" id="account-modal" placeholder="account">
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control" id="password-modal" placeholder="パスワード">
+                                <input type="password" name="password" class="form-control" id="password-modal" placeholder="password">
                             </div>
 
                             <p class="text-center">
-                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> ログイン</button>
+                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                             </p>
 
 
                         </form>
 
-                        <p class="text-center text-muted">アカウントがない？</p>
-                        <p class="text-center text-muted"><a href="/register"><strong>ココ</strong></a>をクリック! <br>1分程で簡単に作ることができます。</p>
+                        <p class="text-center text-muted">Not registered yet?</p>
+                        <p class="text-center text-muted"><a href="/register"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
 
                     </div>
                 </div>
@@ -153,11 +151,10 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">MOVIE<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Movie <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
-                                <a href="http://localhost:8080/category?genreId=33&subgenreId=">MOVIE
                                     <div class="row">
                                         <#list dividedMovieGenres as dividedMovieGenre>
                                             <div class="col-sm-3">
@@ -176,11 +173,10 @@
                     </li>
 
                     <li class="dropdown yamm-fw">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">MUSIC<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Music <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
-                                <a href="http://localhost:8080/category?genreId=34&subgenreId=">MUSIC
                                     <div class="row">
                                         <#list dividedMusicGenres as dividedMusicGenre>
                                             <div class="col-sm-3">
@@ -204,7 +200,7 @@
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">カートの中を見る</span></a>
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
                 </div>
                 <!--/.nav-collapse -->
 
@@ -251,7 +247,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <h4>ページ</h4>
+                        <h4>企業概要</h4>
 
                         <ul>
                             <li><a href="http://www.tis.co.jp/recruit/index.html">TISホーム</a>
@@ -280,7 +276,7 @@
 
                         <h4>ランキング</h4>
 
-                           <a href="http://localhost:8080/category?genreId=33&subgenreId="><h5>MOVIE</h5></a>
+                        <h5>映画</h5>
                         <ul>
                             <#list movieGenres as movie>
                                 <li><a href="/category?genreId=33&subgenreId=${movie.id}">${movie.name}</a></li>
@@ -289,8 +285,7 @@
                     </div>
                     <!-- /.col-md-3 -->
                     <div class="col-md-3 col-sm-6">
-                    <br>
-                      <a href="http://localhost:8080/category?genreId=34&subgenreId="><h5>MUSIC</h5></a>
+                        <h5>音楽</h5>
                         <ul>
                             <#list musicGenres as music>
                                 <li><a href="/category?genreId=34&subgenreId=${music.id}">${music.name}</a></li>
@@ -304,19 +299,18 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>会社情報</h4>
+                        <h4>Where to find us</h4>
 
-                        <p><strong>TIS株式会社</strong>
-
-                            <br>〒160-0023
-                             <br>東京都新宿区
-                             <br>西新宿8丁目17-1
-                          　 <br>住友不動産　新宿グランドタワー
+                        <p><strong>TIS Inc.</strong>
+                            <br>Sumitomo Fudosan Shinjuku Grand Tower,
+                            <br>17-1,Nishishinjuku 8-chome,
+                            <br>Shinjuku-ku,Tokyo,
+                            <br>160-0023
                             <br>
-
+                            <strong>Japan</strong>
                         </p>
 
-                        <a href="http://www.tis.co.jp/recruit/index.html"></a>
+                        <a href="http://www.tis.co.jp/recruit/index.html">Go to contact page</a>
 
                         <hr class="hidden-md hidden-lg">
 
@@ -329,12 +323,12 @@
 
                         <hr>
 
-                        <h4>お問い合わせ</h4>
+                        <h4>Stay in touch</h4>
 
                         <p class="social">
                             <a href="http://www.facebook.com/tis.recruit" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                            <a href="mailto:recruit@tis.co.jp" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
-                            <h6>ご意見・要望お待ちしてります！</h6>
+                            <a href="mailto:recruit★tis.co.jp" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                            <h6>メールアドレスの★を@に変換してください。</h6>
                         </p>
 
 
@@ -359,11 +353,11 @@
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">
-                    <p class="pull-left">© 2016 TIS株式会社</p>
+                    <p class="pull-left">© 2016 TIS Inc.</p>
 
                 </div>
                 <div class="col-md-6">
-                    <p class="pull-right">提供元 <a href="http://bootstrapious.com/e-commerce-templates">Bootstrap Ecommerce Templates</a> 　デザイン提供 <a href="http://kakusei.cz">Designové předměty</a>
+                    <p class="pull-right">Template by <a href="http://bootstrapious.com/e-commerce-templates">Bootstrap Ecommerce Templates</a> with support from <a href="http://kakusei.cz">Designové předměty</a>
                         <!-- Not removing these links is part of the licence conditions of the template. Thanks for understanding :) -->
                     </p>
                 </div>

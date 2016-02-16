@@ -23,7 +23,7 @@
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Ranking</h3>
+                            <h3 class="panel-title">ランキング</h3>
                         </div>
 
                         <div class="panel-body">
@@ -123,8 +123,8 @@
                                     <h3 class="text-category-list-title"><a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}">${item.title}</a></h3>
                                     <p class="price">￥${item.price}</p>
                                     <p class="buttons">
-                                        <a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        <a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}" class="btn btn-default">詳細</a>
+                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->

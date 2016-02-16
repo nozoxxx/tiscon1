@@ -10,7 +10,7 @@
                 <ul class="breadcrumb">
                     <li><a href="/">Home</a>
                     </li>
-                    <li>お気に入り</li>
+                    <li>My wishlist</li>
                 </ul>
 
             </div>
@@ -21,23 +21,23 @@ _________________________________________________________ -->
                 <div class="panel panel-default sidebar-menu">
 
                     <div class="panel-heading">
-                        <h3 class="panel-title">一覧</h3>
+                        <h3 class="panel-title">Customer section</h3>
                     </div>
 
                     <div class="panel-body">
 
                         <ul class="nav nav-pills nav-stacked">
                             <li>
-                                <a href="/my/orders?id=${customer.id}"><i class="fa fa-list"></i>注文履歴</a>
+                                <a href="/my/orders?id=${customer.id}"><i class="fa fa-list"></i> My orders</a>
                             </li>
                             <li class="active">
-                                <a href="/my/wishlist?id=${customer.id}"><i class="fa fa-heart"></i>お気に入り</a>
+                                <a href="/my/wishlist?id=${customer.id}"><i class="fa fa-heart"></i> My wishlist</a>
                             </li>
                             <li>
-                                <a href="/my/account?id=${customer.id}"><i class="fa fa-user"></i>アカウント</a>
+                                <a href="/my/account?id=${customer.id}"><i class="fa fa-user"></i> My account</a>
                             </li>
                             <li>
-                                <a href="/logout"><i class="fa fa-sign-out"></i>ログアウト</a>
+                                <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
                             </li>
                         </ul>
                     </div>
@@ -53,12 +53,12 @@ _________________________________________________________ -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a>
                     </li>
-                    <li>お気に入り</li>
+                    <li>Ladies</li>
                 </ul>
 
                 <div class="box">
-                    <h1>お気に入り</h1>
-                    <p class="lead"></p>
+                    <h1>My wishlist</h1>
+                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
 
                 <div class="row products">
@@ -84,10 +84,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">Fur coat with very but very very long name</a></h3>
-                                <p class="price"> &yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴの入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
                             </div>
                             <!-- /.text -->
@@ -116,10 +116,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail.html">White Blouse Armani</a></h3>
-                                <p class="price"><del>&yen28000</del>&yen14300</p>
+                                <p class="price"><del>$280</del> $143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
                             </div>
                             <!-- /.text -->
@@ -166,10 +166,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">Black Blouse Versace</a></h3>
-                                <p class="price">&yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
 
                             </div>
@@ -199,10 +199,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">Black Blouse Versace</a></h3>
-                                <p class="price">&yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
 
                             </div>
@@ -232,10 +232,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">White Blouse Versace</a></h3>
-                                <p class="price">&yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
 
                             </div>
@@ -271,10 +271,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">Fur coat</a></h3>
-                                <p class="price">&yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
 
                             </div>
@@ -312,10 +312,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="detail.html">White Blouse Armani</a></h3>
-                                <p class="price"><del>&yen28000</del>&yen14300</p>
+                                <p class="price"><del>$280</del> $143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
                             </div>
                             <!-- /.text -->
@@ -362,10 +362,10 @@ _________________________________________________________ -->
                             </a>
                             <div class="text">
                                 <h3><a href="/detail">Black Blouse Versace</a></h3>
-                                <p class="price">&yen14300</p>
+                                <p class="price">$143.00</p>
                                 <p class="buttons">
-                                    <a href="/detail" class="btn btn-default">詳細</a>
-                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>カゴに入れる</a>
+                                    <a href="/detail" class="btn btn-default">View detail</a>
+                                    <a href="/basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </p>
 
                             </div>
